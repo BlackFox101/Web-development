@@ -5,7 +5,7 @@
   }
   
   //$text = getGETParametr('text');
-  $identifier = getGETParametr('text');
+  $identifier = getGETParametr('Identifier');
   echo "indentifier = $identifier";
   $check = 'Y'; //Y - подходит по правилу, N - не подходит  
 
@@ -24,13 +24,13 @@
       }
       ELSE
       { 
-        IF preg_match('/^[0-9]+$/', $identifier[0])
+        IF (preg_match('/^[0-9]+$/', $identifier[0]))
         {
-          echo 'Нет, начинается с цифры'
+          echo 'Нет, начинается с цифры';
         }
         else
         {
-          echo 'ДА'
+          echo 'ДА';
         }
       }
     }
@@ -39,16 +39,6 @@
   {
     echo "Нет, так как состоит не только из букв или цифк, либо там нет ни букв, ни цифр";
   }
-  
-  if (preg_match('/^[a-z]+$/',$text ))
-  {  
-    echo 'Английские буквы есть';
-  }
-  else
-  {
-    echo 'Английских букв нет';
-  }
-  
   
   
   
