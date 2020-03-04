@@ -7,18 +7,18 @@
   //Открывает файл в разных режимах
   $email = getGETParametr('email');
   $direction = 'data/' . $email . '.txt'; // data/sad_alexxxei@mail.ru.txt
-  $email = "email: $email";
+  $email = "Email: $email";
   
   $first_name = getGETParametr('first_name');
-  $first_name = "first_name: $first_name";
+  $first_name = "First_name: $first_name";
   
   $last_name = getGETParametr('last_name');
-  $last_name = "last_name: $last_name";
+  $last_name = "Last_name: $last_name";
   
   $age = getGETParametr('age');
-  $age = "age: $age";
+  $age = "Age: $age";
   
   
-  $fp = fopen($direction, 'w+');
-  fwrite($fp, $email.'<br />'.$first_name.'<br />'.$last_name.'<br />'.$age);
-  fclose($fp);
+  $fd = fopen($direction, 'w+');
+  fwrite($fd, $first_name."\r\n".$last_name."\r\n".$email."\r\n".$age);
+  fclose($fd);

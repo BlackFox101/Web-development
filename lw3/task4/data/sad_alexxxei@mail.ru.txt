@@ -1,1 +1,4 @@
-email: sad_alexxxei@mail.ru<br />first_name: Alexei<br />last_name: Sadovin<br />age: 18
+First_name: Alexei
+Last_name: Sadovin
+Email: sad_alexxxei@mail.ru
+Age: 18
