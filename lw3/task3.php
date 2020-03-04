@@ -50,12 +50,12 @@
       $rel = $rel - $len;
     };
     
-    foreach (count_chars($data, 1) as $i => $val) 
+    foreach (count_chars($pass, 1) as $i => $val) 
     {
-     IF ($val > 1)
-     {
-       $rel = $rel - $val;
-     };
+      IF ($val > 1)
+      {
+      $rel = $rel - $val;
+      };
     };
     echo $rel;
     
