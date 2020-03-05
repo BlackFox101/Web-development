@@ -5,10 +5,17 @@
   }
   $email = getGETParametr('email');
   $direction = 'task4/data/' . $email . '.txt';
-  $fd = fopen($direction, 'r');
-  while(!feof($fd))
+  if (file_exists($direction))
   {
-    $str = htmlentities(fgets($fd));
-    echo $str."<br />";
+    $fd = fopen($direction, 'r');
+    while (!feof($fd))
+    {
+      $str = htmlentities(fgets($fd));
+      echo $str."<br />";
+    };
+    fclose($fd);
   }
-  fclose($fd);
+  else
+  {
+    echo 'Этот пользователь не зарегистирован';
+  }
