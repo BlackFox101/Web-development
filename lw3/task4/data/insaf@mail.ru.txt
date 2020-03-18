@@ -1,0 +1,4 @@
+First_name: Insaf
+Last_name: Halirahmanov
+Email: insaf@mail.ru
+Age: 18

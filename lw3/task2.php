@@ -1,30 +1,28 @@
 <?php
-  FUNCTION getGETParametr(String$name):?String
+  function getGETParametr(string $name):?string
   {
-    return isset($_GET[$name])?(String)$_GET[$name]:null;
+    return isset($_GET[$name]) ? (string)$_GET[$name] : null;
   }
   
   //$text = getGETParametr('text');
   $identifier = getGETParametr('Identifier');
-  echo "indentifier = $identifier";
-  $check = 'Y'; //Y - подходит по правилу, N - не подходит  
-
+  echo "Indentifier = $identifier";
   echo "<br />";  
-  IF (Ctype_alnum($identifier))
+  if (Ctype_alnum($identifier))
   {
-    IF (Ctype_alpha($identifier))
+    if (Ctype_alpha($identifier))
     {
       echo "Да, так как только из букв";
     }
-    ELSE
+    else
     {
-      IF (Ctype_digit($identifier))
+      if (Ctype_digit($identifier))
       {
         echo "Нет, так как состоит только из цифр";
       }
-      ELSE
+      else
       { 
-        IF (preg_match('/^[0-9]+$/', $identifier[0]))
+        else (preg_match('/[0-9]/', $identifier[0]))
         {
           echo 'Нет, начинается с цифры';
         }
@@ -35,7 +33,7 @@
       }
     }
   }
-  ELSE
+  else
   {
     echo "Нет, так как состоит не только из букв или цифк, либо там нет ни букв, ни цифр";
   }

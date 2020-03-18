@@ -1,36 +1,32 @@
 PROGRAM WorkWithQueryString(INPUT, OUTPUT);
 USES
   GPC;
+VAR
+   Str: STRING;
 FUNCTION GetQueryStringParameter(Key: STRING): STRING;
 VAR
-  Str, Check: STRING;
+  CheckKey, QueryString: STRING;
 BEGIN {GetQueryStringParameter}
   Str := GetEnv('QUERY_STRING');
   Str := Str + '&';
-  WHILE Length(Str) > 0
+  GetQueryStringParameter := '';
+  WHILE Length(QueryString) > 0
   DO
     BEGIN
-      Check := Copy(Str, 1, Pos('=', Str)-1);
-      IF Check = Key
+      CheckKey := Copy(QueryString, 1, Pos('=', QueryString) - 1);
+      IF Key = CheckKey
       THEN
         BEGIN
-          Delete(Str, 1, Pos('=', Str));
-          Check := Copy(Str, 1, Pos('&', Str)-1); //&
-          IF Check <> '&'
-          THEN
-            GetQueryStringParameter := Copy(Str, 1, Pos('&', Str)-1)
-          ELSE
-            GetQueryStringParameter := 'Пусто';
-          Delete(Str, 1, Length(Str))
+          DELETE(QueryString, 1, Pos('=', QueryString));
+          GetQueryStringParameter := Copy(QueryString, 1, Pos('&', QueryString) - 1);
         END
       ELSE
         BEGIN
           Delete(Str, 1, Pos('&', Str));
           GetQueryStringParameter := 'Нет такого идентификатора'
         END
-    END
-END; {GetQueryStringParameter}
-
+    END           
+END; {GetQueryStringParameter}                   
 BEGIN {WorkWithQueryString}
   WRITELN('Content-Type: text/plain');
   WRITELN;

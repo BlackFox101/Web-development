@@ -1,7 +1,7 @@
 <?php
-  FUNCTION getGETParametr(String$name):?String
+  function getGETParametr(string $name):?string
   {
-    return isset($_GET[$name])?(String)$_GET[$name]:null;
+    return isset($_GET[$name]) ? (string)$_GET[$name] : null;
   }
   $email = getGETParametr('email');
   $direction = 'task4/data/' . $email . '.txt';
