@@ -1,248 +1,200 @@
 *
 {
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
-}
-
-body
-{
-	text-decoration: none;
-
-}
-
-
-.navigation
-{
-	width: 1000px;
-	margin: 0 auto;
-	padding-left: 20px;
-	padding-right: 20px;
-	height: 50px;
-	position: sticky
-}
-
-ul.header_lists
-{
 	margin: 0;
-	padding-left: 0px;
-	list-style: none;
-}
-
-.header_lists li
-{
-	float: left;
-}
-
-ul.header_lists a
-{
-    display: block;
-    font-size: 19px;
-	line-height: 32px;
-    padding-top: 10px;
-    padding-left: 21px;
-    padding-right: 21px;
-    height: 50px;
-    text-decoration: none;
-    color: #333;
-	font-family: "Georgia";
-}
-
-
-ul.header_lists a:hover
-{
-	color: #f5f5f5;
-	font-family: "Georgia";
-	background-color: #15a98c;
-}
-
-img.icon_lists
-{
-	padding-right: 10px;
-}
-
-img.background
-{
-	position: absolute;
-	z-index: -999;
+	padding: 0;
 }
 
 .site
 {
-	margin-top: 210px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 1200px;
-	height: 2060px;
+	height: 1271px;
+	margin-top: 80px;
+	margin-left: 363px;
+	margin-right: 363px;
+	padding-left: 21px;
+	padding-right: 16px;
+
 }
 
-.content_top
+.top
 {
-	width: 1000px;
-	height: 240px;
-	margin-left: 100px;
-	margin-right: 100px;
-	padding-left: 20px;
-	padding-right: 20px;
+	width: 756.2px;
+	height: 280px;
+}
+
+.photo
+{
+	float: left;
+	width: 264px;
+	height: 280px;
 }
 
 img.porter
 {
-	border-radius: 5px;
-	background-color: #132d36;
-	float: left;
+	width: 264px;
+	height: 280px;
+}
+
+.thesis
+{
+	float: right;
+	margin-left: 48px;
+	width: 444px;
+	height: 280px;
+}
+
+.commas
+{
+	margin-top: 40px;
+	height: 63px;
+}
+
+img.quotes
+{
+	margin-top: 41px;
+	width: 104px;
+	height: 69.5px;
 	position: absolute;
+}
+
+.quotation
+{
+	margin-top: 96px;
+	position: relative;
+	height: 180px;
+	margin-left: 46px;
+	width: 398px;
 }
 
 .quote
 {
-	margin-left: 330px;
-	height: 190px;
-	padding-left: 63px;
-	padding-top: 25px;
-	float: left;
-}
-
-p.quote_text
-{
-	font-size: 28px;
-	line-height: 42px;
-	color: #ffffff;
+	width: 398px;
+	font-size: 22px;
+	line-height: 33px;
+	color: #848484;
 	font-family: "Georgia";
 	font-style: italic;
 }
 
-p.quote_author
+.auther
 {
-	font-size: 16px;
-	line-height: 42px;
-	color: #f5f5f5;
+	font-size: 13px;
+	line-height: 33px;
+	color: #333333;
 	font-family: "Open Sans";
 	font-weight: 600;
 }
 
-.content_bottom
+.bottom
 {
-	width: 1000px;
-	height: 640px;
-	margin-left: 100px;
-	margin-right: 100px;
-	padding-left: 20px;
-	padding-right: 20px;	
+	margin-top: 35px;
+	height: 871px;
 }
 
 .lists
 {
-	margin-top: 156px;
 	float: left;
-	width: 330px;
+	width: 261px;
+	height: 871px;
 }
 
 h3.list_title
 {
-	font-size: 24px;
-	line-height: 32px;
+	font-size: 20px;
 	color: #15a98c;
 	font-family: "Open Sans";
 	font-weight: 600;
-	letter-spacing: 1px;
 }
 
-.writers_list
+ul
 {
-	width: 330px;
-	padding-top: 12px;
-	height: 198px;
-	font-size: 19px;
-	line-height: 36px;
+	margin-left: 18px;
+	margin-top: 10.5px;
+	font-size: 15px;
+	line-height: 29px;
 	color: #555555;
 	font-family: "Georgia";
-	margin-left: 20px;
 }
 
-.films_list
+.list_bottom
 {
-	padding-top: 11px;
-	width: 330px;
-	height: 260px;
-	font-size: 19px;
-	line-height: 36px;
+	margin-top: 30px;
+}
+
+ol
+{
+	margin-left: 15px;
+	margin-top: 10.5px;
+	font-size: 15px;
+	line-height: 29px;
 	color: #555555;
 	font-family: "Georgia";
-	margin-left: 20px;
 }
 
 .info
 {
-	width: 960px;
-	padding-left: 390px;
-	height: 740px;
+	float: right;
+	width: 444px;
+	margin-left: 47.47px;
+	height: 871px;
 }
 
-.me
+h1.name
 {
-`	height: 360px;
-}
-
-h1
-{
-	margin-left: 4px;
-	font-size: 51px;
-	line-height: 40px;
+	font-size: 35px;
+	line-height: 36px;
+	margin-left: 5px;
 	color: #333333;
 	font-family: "Open Sans";
-	font-weight: 1200;
-}
-
-p.text_me
-{
-	margin-top: 40px;
-	width: 561px;
-	height: 198px;
-	font-size: 19px;
-	line-height: 32px;
-	color: #555555;
-	font-family: "Georgia";
+	font-weight: 1000;
 }
 
 img.figure
 {
-	margin-top: 27px;
-	width: 63px;
-	height: 7px;
+	margin-top: 23px;
+	width: 48px;
+	height: 5px;
 	border-radius: 3px;
 	background-color: #45c3aa;
 }
 
-h2
+p.text_me
 {
-	font-size: 36px;
+	margin-top: 31px;
+	width: 400px;
+	height: 150px;
+	font-size: 15px;
+	line-height: 26px;
+	color: #555555;
+	font-family: "Georgia";
+}
+
+h2.hobby_name
+{
+	margin-top: 33.5px;
+	font-size: 30px;
 	line-height: 42px;
 	color: #333333;
 	font-family: "Open Sans";
 	font-weight: 400;
 }
 
-.hobby
-{
-	margin-top: 37px;
-}
-
 p.text_hobby
 {
-	margin-top: 15px;
-	width: 562px;
-	height: 201px;
-	font-size: 19px;
-	line-height: 32px;
+	margin-top: 9px;
+	width: 444px;
+	height: 160px;
+	font-size: 15px;
+	line-height: 26px;
 	color: #555555;
 	font-family: "Georgia";
 }
 
-p.communication
+.communication
 {
-	font-size: 19px;
-	line-height: 32px;
+	width: 444px;
+	height: 263px;
+	font-size: 15px;
+	line-height: 26px;
 	color: #15a98b;
 	font-family: "Georgia";
 }
@@ -258,106 +210,13 @@ span.span_link
 	border-bottom: 1px #15a98b solid;
 }
 
-.description_film
-{
-	margin-top: 95px;
-	height: 900px;
-}
-
-span.info_film
-{
-	font-size: 36px;
-	line-height: 42px;
-	color: #333333;
-	font-family: "Open Sans";
-	font-weight: 400;
-}
-
 .films
 {
-	margin-top: 32px;
-	height: 821px;
+	margin-top: 40px;
 }
 
 .film_one
 {
 	width: 285px;
-	float: left;
-}
-
-.film_two
-{
-	width: 285px;
 	margin-left: 20px;
-	float: left;
-}
-
-.film_three
-{
-	width: 285px;
-	margin-left: 20px;
-	float: left;
-}
-
-.film_four
-{
-	width: 285px;
-	margin-left: 20px;
-	float: left;
-}
-
-h2.name_film
-{
-	margin-top: 20px;
-	font-size: 22px;
-	line-height: 32px;
-	color: #333333;
-	font-family: "Open Sans";
-	font-weight: 900;
-}
-
-p.description
-{
-	margin-top: 19px;
-	height: 565px;
-	font-size: 16px;
-	line-height: 28px;
-	color: #555555;
-	font-family: "Georgia";
-}
-
-.link_films
-{
-	margin-left: 480px;
-	text-decoration: none;
-	text-align: center;
-	width: 220px;
-    height: 50px;
-    display: block;
-    font-size: 19px;
-	line-height: 32px;
-	border-radius: 5px;
-	color: #f5f5f5;
-	font-family: "Georgia";
-	background-color: #15a98c;
-}
-
-
-.link_films:hover
-{
-	color: #f5f5f5;
-	font-family: "Georgia";
-	background-color: #15a98c;
-}
-
-footer
-{
-	height: 70px;
-	font-size: 16px;
-	line-height: 32px;
-	color: #555555;
-	font-family: "Georgia";
-	text-align: center;
-	background: #f5f5f5;
-	padding: 20px;
 }
