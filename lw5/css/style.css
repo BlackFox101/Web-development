@@ -209,3 +209,14 @@ span.span_link
 {
 	border-bottom: 1px #15a98b solid;
 }
+
+.films
+{
+	margin-top: 40px;
+}
+
+.film_one
+{
+	width: 285px;
+	margin-left: 20px;
+}
