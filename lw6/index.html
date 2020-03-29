@@ -105,31 +105,37 @@
     <div class="form">
       <div class="header">
         <span class="line_left"></span>
-        <h4 class="form_header">Напиши мне</h4>
+        <h4 class="form_header">НАПИШИ МНЕ</h4>
         <span class="line_right"></span>
       </div>
       <form action="php/index.php" method="get" >
         <label>Ваше имя <span class="red">*</span></label>
-        <p><input type="text" name="first_name" maxlength="255" title="email" value="" class="input_data" required /></p>
-        <label>Ваш email <span class="red">*</span></label>
-        <p><input type="email" name="email" value="" class="input_data" required /></p>
+        <div>
+        	<input type="text" name="first_name" maxlength="255" title="Имя" value="" class="input_data" required />
+      	</div>
+				<label>Ваш email <span class="red">*</span></label>
+				<div>
+	      	<input type="email" name="email" value="" class="input_data" title="Email" required />
+      	</div>
         <label>Откуда вы? </label>
-        <p class="country">
-          <select name="country" >
-            <option>Россия</option>
-            <option>США</option>
-            <option>Китай</option>
-            <option>Германия</option>
-            <option>Украина</option>
-          </select>
-        </p>
+        <!--class="country"-->
+        <div class="country">
+	        <select name="country" >
+	          <option>Россия</option>
+	          <option>США</option>
+	          <option>Китай</option>
+	          <option>Германия</option>
+	          <option>Украина</option>
+	        </select>
+        </div>
         <label class="gender">Ваш пол <span class="red">*</span></label>
-        <p class="radio">
-          <input type="radio" name="gender" value="men" id="men" required checked/><label for="men">Мужской</label>
-          <input type="radio" name="gender" value="woman" id="woman" required /><label for="woman">Женский</label>
-        </p>
+        <!-- class="radio"-->
+        <div class="radio">
+          <input type="radio" name="gender" value="Мужской" id="men" required checked /><label class="gender" for="men">Мужской</label>
+          <input type="radio" name="gender" value="Женский" id="woman" required /><label class="gender" for="woman">Женский</label>
+        </div> 
         <label>Ваше сообщение <span class="red">*</span></label>
-        <textarea type="text" name="message" required>
+        <textarea name="message" required>
         </textarea>
         <button type="submit" class="submit">Отправить</button>
       </form>

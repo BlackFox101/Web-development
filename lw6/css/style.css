@@ -118,7 +118,14 @@ ul.header_lists a:hover
 
 .img_qoutes
 {
-    height: 350px;
+    position: relative;
+}
+
+.img_qoutes:after
+{
+    content: '';
+    display: block;
+    clear: both;
 }
 
 img.porter
@@ -427,8 +434,12 @@ footer
 
 h4
 {
+    font-size: 36px;
+    line-height: 42px;
+    color: #333333;
+    font-family: "Open Sans";
+    font-weight: 300;
     text-align: center;
-    font: 300 36px/1em Open Sans, sans-serif; 
 }
 
 .line_left
@@ -477,30 +488,16 @@ form > label
     color: #333333;
     font-family: "Open Sans";   
     font-weight: 400;
-    padding-left: 18px;
+    padding: 0 18px;
 }
 
-form > p
+form > div
 {
     padding-top: 4px;
     margin-bottom: 23px;
 }
 
-select
-{
-    width: 100%;
-    border-radius: 3px;
-    border: 2px solid #c9c9c9;
-    height: 50px;
-    font-size: 18px;
-    line-height: 32px;
-    color: #555555;
-    font-family: "Open Sans";
-    font-weight: 400;
-    padding-left: 13px; 
-}
-
-p > label
+div > label
 {
     font-size: 18px;
     line-height: 32px;
@@ -509,15 +506,35 @@ p > label
     font-weight: 400;
 }
 
+input:hover, select:hover, textarea:hover
+{
+    border-color: #a6a6a6;
+}
+
+input:focus, select:focus, textarea:focus
+{
+    box-shadow: none;
+    border-color: #15a98c;
+    outline: 0;
+    outline-offset: 0;
+}
+
 input#men
 {
     margin-right: 9px;
+    cursor: pointer;
 }
 
 input#woman
 {
     margin-right: 9px;
     margin-left: 35px;
+    cursor: pointer;
+}
+
+.gender
+{
+    cursor: pointer;
 }
 
 textarea
@@ -531,17 +548,41 @@ textarea
     color: #333333;
     font-family: "Open Sans";   
     font-weight: 400;
-    padding-left: 18px;
+    padding: 0 18px;
 }
 
-p.country
+.country select
+{
+    width: 540px;
+    border-radius: 3px;
+    border: 2px solid #c9c9c9;
+    height: 50px;
+    font-size: 18px;
+    line-height: 32px;
+    color: #555555;
+    font-family: "Open Sans";
+    font-weight: 400;
+    padding-left: 13px; 
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.country
 {
     margin-bottom: 42px;
+    background: url(../images/arrow_down.png/) no-repeat;
+    background-position: 500px 23px;
 }
 
-p.radio
+.radio
 {
     margin-bottom: 35px;
+}
+
+select
+{
+    cursor: pointer;
 }
 
 .submit
@@ -567,5 +608,10 @@ p.radio
 .red
 {
     color: #ee0707;
+}
+
+button
+{
+    cursor: pointer;
 }
 

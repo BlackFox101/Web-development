@@ -110,11 +110,15 @@
       </div>
       <form action="index.php" method="get" >
         <label>Ваше имя <span class="red">*</span></label>
-        <p><input type="text" name="first_name" maxlength="255" title="email" value="" class="input_data" /></p>
+        <div>
+          <input type="text" name="first_name" maxlength="255" title="Имя" value="" class="input_data" required />
+        </div>
         <label>Ваш email <span class="red">*</span></label>
-        <p><input type="email" name="email" value="" class="input_data" /></p>
+        <div>
+          <input type="email" name="email" value="" class="input_data" title="Email" required />
+        </div>
         <label>Откуда вы? </label>
-        <p class="country">
+        <div class="country">
           <select name="country" >
             <option>Россия</option>
             <option>США</option>
@@ -122,14 +126,14 @@
             <option>Германия</option>
             <option>Украина</option>
           </select>
-        </p>
+        </div>
         <label class="gender">Ваш пол <span class="red">*</span></label>
-        <p class="radio">
-          <input type="radio" name="gender" value="Мужской" id="men" checked/><label for="men">Мужской</label>
-          <input type="radio" name="gender" value="Женский" id="woman" /><label for="woman">Женский</label>
-        </p>
+        <div class="radio">
+          <input type="radio" name="gender" value="Мужской" id="men" required checked/><label for="men">Мужской</label>
+          <input type="radio" name="gender" value="Женский" id="woman" required /><label for="woman">Женский</label>
+        </div>
         <label>Ваше сообщение <span class="red">*</span></label>
-        <textarea type="text" name="message">
+        <textarea name="message">
         </textarea>
         <button type="submit" class="submit">Отправить</button>
         <?php include 'script_write_form.php'; ?>
