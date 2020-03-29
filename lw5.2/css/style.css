@@ -115,6 +115,11 @@ ul.header_lists a:hover
     padding-right: 20px;
 }
 
+.img_qoutes
+{
+    position: relative;
+}
+
 .img_qoutes:after
 {
     content: '';
