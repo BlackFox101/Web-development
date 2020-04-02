@@ -105,7 +105,7 @@
     <div class="form">
       <div class="header">
         <span class="line_left"></span>
-        <h4 class="form_header">Напиши мне</h4>
+        <h4 class="form_header">НАПИШИ МНЕ</h4>
         <span class="line_right"></span>
       </div>
       <form action="index.php" method="get" >
@@ -118,6 +118,7 @@
           <input type="email" name="email" value="" class="input_data" title="Email" required />
         </div>
         <label>Откуда вы? </label>
+        <!--class="country"-->
         <div class="country">
           <select name="country" >
             <option>Россия</option>
@@ -128,12 +129,13 @@
           </select>
         </div>
         <label class="gender">Ваш пол <span class="red">*</span></label>
+        <!-- class="radio"-->
         <div class="radio">
-          <input type="radio" name="gender" value="Мужской" id="men" required checked/><label for="men">Мужской</label>
-          <input type="radio" name="gender" value="Женский" id="woman" required /><label for="woman">Женский</label>
-        </div>
+          <input type="radio" name="gender" value="Мужской" id="men" required checked /><label class="gender" for="men">Мужской</label>
+          <input type="radio" name="gender" value="Женский" id="woman" required /><label class="gender" for="woman">Женский</label>
+        </div> 
         <label>Ваше сообщение <span class="red">*</span></label>
-        <textarea name="message">
+        <textarea name="message" required>
         </textarea>
         <button type="submit" class="submit">Отправить</button>
         <?php include 'script_write_form.php'; ?>

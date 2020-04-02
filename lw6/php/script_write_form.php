@@ -9,20 +9,14 @@
   $direction = '../';
   chdir($direction);
   $direction = 'data/' . $email . '.txt';
-
-  $email = "Email: $email";
   
   $first_name = getGETParametr('first_name');
-  $first_name = "First_name: $first_name";
   
   $country = getGETParametr('country');
-  $country = "Сountry: $country";
   
   $gender = getGETParametr('gender');
-  $gender = "Gender: $gender";
   
   $message = getGETParametr('message');
-  $message = "Message: $message";
 
   $fd = fopen($direction, 'w+');
   fwrite($fd, $first_name."\r\n".$email."\r\n".$country."\r\n".$gender."\r\n".$message);
