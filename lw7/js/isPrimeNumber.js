@@ -25,7 +25,7 @@ function isPrimeNumber(number) {
 
   } else {
 
-    for (var i = 0; i < number.length; i++) {
+    for (let i = 0; i < number.length; i++) {
       isPrime = true
       if (number[i] > 1) {
         for (let j = 2; j < number[i]; j++) {
