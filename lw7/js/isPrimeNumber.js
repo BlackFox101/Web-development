@@ -14,10 +14,10 @@ function isPrimeNumber(number) {
       }
 
       if (isPrime) {
-        console.log('The number', number,'is prime')
+        console.log('The number ' + number + ' is prime')
       }
       else {
-        console.log('The number', number,'is not prime')
+        console.log('The number ' + number + ' is not prime')
       }
     } else {
       console.log('Не верные данные!')
@@ -40,10 +40,10 @@ function isPrimeNumber(number) {
       }
 
       if (isPrime) {
-        console.log('The number', number[i],'is prime')
+        console.log('The number ' + number[i] + ' is prime')
       }
       else {
-        console.log('The number', number[i],'is not prime')
+        console.log('The number ' + number[i] + ' is not prime')
       }
     }
   }
