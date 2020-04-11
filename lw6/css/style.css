@@ -506,12 +506,12 @@ div > label
     font-weight: 400;
 }
 
-input:hover, textarea:hover
+.country select:hover, input:hover, textarea:hover
 {
     border-color: #a6a6a6;
 }
 
-input:focus, textarea:focus
+.country select:focus, input:focus, textarea:focus
 {
     box-shadow: none;
     border-color: #15a98c;
@@ -565,19 +565,6 @@ textarea
     padding-left: 13px; 
     background: transparent;
     -webkit-appearance: none;
-}
-
-.country select:hover
-{
-    border-color: #a6a6a6;
-}
-
-.country select:focus
-{
-    box-shadow: none;
-    border-color: #15a98c;
-    outline: 0;
-    outline-offset: 0;
 }
 
 .country
