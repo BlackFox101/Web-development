@@ -1,17 +1,7 @@
 function isPrimeNumber(number) {
-  isPrime = true
   if (!Array.isArray(number)) {
     if (Number.isInteger(number)) {
-      if (number > 1) {
-        for (let j = 2; j < number; j++) {
-          if (number % j == 0) {
-            isPrime = false;
-            break;
-          }
-        }
-      } else {
-        isPrime = false;
-      }
+      Check(number);
 
       if (isPrime) {
         console.log('The number ' + number + ' is prime');
@@ -26,25 +16,33 @@ function isPrimeNumber(number) {
   } else {
 
     for (let i = 0; i < number.length; i++) {
-      isPrime = true;
-      if (number[i] > 1) {
-        for (let j = 2; j < number[i]; j++) {
-          if (number[i] % j == 0) {
-            isPrime = false;
-            break
-          }
+      if (Number.isInteger(number[i])) {
+        isPrime = true;
+        check(number[i]);
+
+        if (isPrime) {
+          console.log('The number ' + number[i] + ' is prime');
         }
-
+        else {
+          console.log('The number ' + number[i] + ' is not prime');
+        }
       } else {
-        isPrime = false;
-      }
-
-      if (isPrime) {
-        console.log('The number ' + number[i] + ' is prime');
-      }
-      else {
-        console.log('The number ' + number[i] + ' is not prime');
+        console.log('Не верные данные!');
       }
     }
+  }
+}
+
+function check(number) {
+  if (number > 1) {
+    for (let j = 2; j < number; j++) {
+      isPrime = true;
+      if (number % j == 0) {
+        isPrime = false;
+        break;
+      }
+    }
+  } else {
+    isPrime = false;
   }
 }

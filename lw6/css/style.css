@@ -1,7 +1,7 @@
 *
 {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box; 
 }
 
@@ -506,12 +506,12 @@ div > label
     font-weight: 400;
 }
 
-input:hover, select:hover, textarea:hover
+input:hover, textarea:hover
 {
     border-color: #a6a6a6;
 }
 
-input:focus, select:focus, textarea:focus
+input:focus, textarea:focus
 {
     box-shadow: none;
     border-color: #15a98c;
@@ -565,6 +565,19 @@ textarea
     padding-left: 13px; 
     background: transparent;
     -webkit-appearance: none;
+}
+
+.country select:hover
+{
+    border-color: #a6a6a6;
+}
+
+.country select:focus
+{
+    box-shadow: none;
+    border-color: #15a98c;
+    outline: 0;
+    outline-offset: 0;
 }
 
 .country
