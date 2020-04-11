@@ -5,45 +5,45 @@ function isPrimeNumber(number) {
       if (number > 1) {
         for (let j = 2; j < number; j++) {
           if (number % j == 0) {
-            isPrime = false
-            break
+            isPrime = false;
+            break;
           }
         }
       } else {
-        isPrime = false
+        isPrime = false;
       }
 
       if (isPrime) {
-        console.log('The number ' + number + ' is prime')
+        console.log('The number ' + number + ' is prime');
       }
       else {
-        console.log('The number ' + number + ' is not prime')
+        console.log('The number ' + number + ' is not prime');
       }
     } else {
-      console.log('Не верные данные!')
+      console.log('Не верные данные!');
     }
 
   } else {
 
     for (let i = 0; i < number.length; i++) {
-      isPrime = true
+      isPrime = true;
       if (number[i] > 1) {
         for (let j = 2; j < number[i]; j++) {
           if (number[i] % j == 0) {
-            isPrime = false
+            isPrime = false;
             break
           }
         }
 
       } else {
-        isPrime = false
+        isPrime = false;
       }
 
       if (isPrime) {
-        console.log('The number ' + number[i] + ' is prime')
+        console.log('The number ' + number[i] + ' is prime');
       }
       else {
-        console.log('The number ' + number[i] + ' is not prime')
+        console.log('The number ' + number[i] + ' is not prime');
       }
     }
   }
