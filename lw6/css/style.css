@@ -570,7 +570,7 @@ textarea
 .country
 {
     margin-bottom: 42px;
-    background: url(../images/arrow_down.png/) no-repeat;
+    background: url(../images/arrow_down.png) no-repeat;
     background-position: 500px 23px;
 }
 
