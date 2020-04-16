@@ -1,7 +1,8 @@
 function isPrimeNumber(number) {
+  let isPrime;
   if (!Array.isArray(number)) {
     if (Number.isInteger(number)) {
-      Check(number);
+      check(number);
 
       if (isPrime) {
         console.log('The number ' + number + ' is prime');
@@ -37,7 +38,7 @@ function check(number) {
   if (number > 1) {
     for (let j = 2; j < number; j++) {
       isPrime = true;
-      if (number % j == 0) {
+      if (number % j === 0) {
         isPrime = false;
         break;
       }
