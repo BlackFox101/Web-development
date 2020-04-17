@@ -5,6 +5,7 @@
     <title>Профиль</title>
     <link href="../css/style.css" rel="stylesheet" >
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="js/slider.js"></script>
   </head>
   <body>
     <div class="navigation">
@@ -16,7 +17,7 @@
     </div>
     <div class="site">
       <div class="content_top">
-        <div class="img_qoutes">
+        <div class="../img_qoutes">
           <img class="porter" src="../images/girl.png" alt="girl">
           <div class="quote">
             <p class="quote_text">
@@ -72,6 +73,8 @@
           </p>
         </div>
       </div>
+    </div>
+    <div class="background_color_film">
       <div class="description_film">
         <h2 class="info_film" id="favorite_films">Любимые фильмы</h2>
         <div class="films">
@@ -108,7 +111,7 @@
         <h4 class="form_header">НАПИШИ МНЕ</h4>
         <span class="line_right"></span>
       </div>
-      <form action="index.php" method="get" >
+      <form action="php/index.php" method="get" >
         <label>Ваше имя <span class="red">*</span></label>
         <div>
           <input type="text" name="first_name" maxlength="255" title="Имя" value="" class="input_data" required />
@@ -128,17 +131,17 @@
             <option>Украина</option>
           </select>
         </div>
-        <label class="gender">Ваш пол <span class="red">*</span></label>
+        <label>Ваш пол <span class="red">*</span></label>
         <!-- class="radio"-->
         <div class="radio">
           <input type="radio" name="gender" value="Мужской" id="men" required checked /><label class="gender" for="men">Мужской</label>
           <input type="radio" name="gender" value="Женский" id="woman" required /><label class="gender" for="woman">Женский</label>
         </div> 
         <label>Ваше сообщение <span class="red">*</span></label>
-        <textarea name="message" required>
-        </textarea>
+        <textarea name="message" required></textarea>
         <button type="submit" class="submit">Отправить</button>
         <?php include 'script_write_form.php'; ?>
+      </form>
       </form>
     </div>
     <footer>© 2006-2018 Поволжский государственный технологический университет, ФГБОУ ВО «ПГТУ»</footer>
