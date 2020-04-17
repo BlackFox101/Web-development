@@ -256,6 +256,7 @@ img.figure
 h2
 {
     font-size: 36px;
+    margin-left: 20px;
     line-height: 42px;
     color: #333333;
     font-family: "Open Sans";
@@ -302,19 +303,6 @@ span.span_link
     border-bottom: 1px #15a98b solid;
 }
 
-.background_color_film
-{
-    background-color: #f9f9f9;
-}
-
-.description_film
-{
-    padding-top: 40px;
-    height: 1045px;
-    width: 1200px;
-    margin: 0 auto 40px auto;
-}
-
 span.info_film
 {
     font-size: 36px;
@@ -337,43 +325,6 @@ span.info_film
     clear: both;
 }
 
-.film_one
-{
-    width: 285px;
-    float: left;
-}
-
-.film_two
-{
-    width: 285px;
-    margin-left: 20px;
-    float: left;
-}
-
-.film_three
-{
-    width: 285px;
-    margin-left: 20px;
-    float: left;
-}
-
-.film_four
-{
-    width: 285px;
-    margin-left: 20px;
-    float: left;
-}
-
-h2.name_film
-{
-    margin-top: 20px;
-    font-size: 22px;
-    line-height: 32px;
-    color: #333333;
-    font-family: "Open Sans";
-    font-weight: 900;
-}
-
 p.description
 {
     margin-top: 19px;
@@ -386,7 +337,7 @@ p.description
 
 .link_films
 {
-    margin-left: 480px;
+    margin-left: 500px;
     text-decoration: none;
     text-align: center;
     width: 220px;
@@ -617,4 +568,81 @@ select
 button
 {
     cursor: pointer;
+}
+
+.description_film
+{
+    height: 1045px;
+    width: 1220px;
+    padding: 40px 0 0 0;
+    margin: 0 auto 40px auto;
+}
+
+.background_color_film
+{
+    background-color: #f9f9f9;
+}
+
+.div_help
+{
+    margin: 0 auto;
+    width: 1400px;
+    position: relative;
+}
+
+.control_right
+{
+    height: 60px;
+    width: 60px;
+    z-index: 1;
+    position: absolute;
+    right: 0px;
+    top: 150px;
+}
+
+.control_left
+{
+    height: 60px;
+    width: 60px;
+    z-index: 1;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+}
+
+.control_left > img
+{
+    height: 60px;
+    width: 60px;
+    transform: rotate(-180deg)
+}
+
+.control_right > img
+{
+    height: 60px;
+    width: 60px;
+}
+
+h5
+{
+    margin-top: 20px;
+    font-size: 22px;
+    line-height: 32px;
+    color: #333333;
+    font-family: "Open Sans";
+    font-weight: 900;
+}
+
+.film
+{
+    width: 285px;
+    margin-left: 20px;
+    float: left;
+}
+
+.left
+{
+    float: right;
+    width: 100px;
+    height: 300px;
 }
