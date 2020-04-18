@@ -312,12 +312,6 @@ span.info_film
     font-weight: 400;
 }
 
-.films
-{
-    margin-top: 32px;
-    position: relative;
-}
-
 .films:after
 {
     content: '';
@@ -328,7 +322,7 @@ span.info_film
 p.description
 {
     margin-top: 19px;
-    height: 565px;
+    height: 535px;
     font-size: 16px;
     line-height: 28px;
     color: #555555;
@@ -337,7 +331,7 @@ p.description
 
 .link_films
 {
-    margin-left: 500px;
+    margin-left: 590px;
     text-decoration: none;
     text-align: center;
     width: 220px;
@@ -350,7 +344,7 @@ p.description
     font-family: "Georgia";
     background-color: #15a98c;
     position: absolute;
-    top: 820px;
+    top: 932px;
     padding-top: 9px;
 }
 
@@ -637,12 +631,31 @@ h5
 {
     width: 285px;
     margin-left: 20px;
-    float: left;
+    position: absolute;
 }
 
-.left
+.films
 {
-    float: right;
-    width: 100px;
-    height: 300px;
+    width: 1220px;
+    margin-top: 32px;
+    position: relative;
+    background: pink;
+}
+
+.control_right, .control_left
+{
+    border-style: none;
+}
+
+.control_right:focus, .control_left:focus
+{
+    box-shadow: none;
+    outline: 0;
+}
+
+.film > img
+{
+    border-radius: 5px;
+    width: 285px;
+    height: 190px;
 }
