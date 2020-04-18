@@ -4,9 +4,7 @@ function sliderKarusel() {
   document.getElementById('slider_left').onclick = slideLeft; // Клик на кнопку влево
   document.getElementById('slider_right').onclick = slideRight; // Клик на правую кнопку
   let slides = document.querySelectorAll('.film'); //Берем все слайды в массив
-  console.log(slides);
   const numberLastSlide = slides.length - 1; // Номер последнего
-  console.log(numberLastSlide);
   for  (let i = 0; i < slides.length; i++) { //Удаляем слайды с экрана
     slides[i].remove();
   }
@@ -82,6 +80,5 @@ function sliderKarusel() {
   function draw() {
     slides[slide].style.left = offsetGlobal * widthSlide + 'px';
     document.querySelector('#films').appendChild(slides[slide]);
-    console.log('Нарисована ' + slide + ' картинка!');
   }
 }
