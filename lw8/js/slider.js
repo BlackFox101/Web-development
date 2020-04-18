@@ -6,9 +6,9 @@ for  (let i = 0; i < slides.length; i++) { //Удаляем слайды с эк
 }
 document.getElementById('slider_left').onclick = slideLeft; // Клик на кнопку влево
 document.getElementById('slider_right').onclick = slideRight; // Клик на правую кнопку
-var step = 0; // Номер слайда в массиве тоесть 0 это 1 слайд
-var slide;
-var offsetGlobal = 0; //сдвиг
+var step = 0; // Номер шага
+var slide; // Номер слайда
+var offsetGlobal = 0; // Позиция слайда
 startSlides();
 //-------------------------------------------------------------
 
