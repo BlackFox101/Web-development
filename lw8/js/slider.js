@@ -1,85 +1,87 @@
-// Инициализация
-var slides = document.querySelectorAll('.film'); //Берем все слайды в массив
-console.log(slides);
-for  (let i = 0; i < slides.length; i++) { //Удаляем слайды с экрана
-  slides[i].remove();
-}
-document.getElementById('slider_left').onclick = slideLeft; // Клик на кнопку влево
-document.getElementById('slider_right').onclick = slideRight; // Клик на правую кнопку
-var step = 0; // Номер шага
-var slide; // Номер слайда
-var offsetGlobal = 0; // Позиция слайда
-startSlides();
-//-------------------------------------------------------------
+sliderKarusel();
+function sliderKarusel() {
+  //Инициализация
+  document.getElementById('slider_left').onclick = slideLeft; // Клик на кнопку влево
+  document.getElementById('slider_right').onclick = slideRight; // Клик на правую кнопку
+  let slides = document.querySelectorAll('.film'); //Берем все слайды в массив
+  console.log(slides);
+  const numberLastSlide = slides.length - 1; // Номер последнего
+  console.log(numberLastSlide);
+  for  (let i = 0; i < slides.length; i++) { //Удаляем слайды с экрана
+    slides[i].remove();
+  }
+  let step = 0; // Номер шага
+  let slide; // Номер слайда
+  let offsetGlobal = 0; // Позиция слайда
+  const widthSlide = 305;
+  startSlides();
+  //-------------------------------------------------------------
 
-function startSlides() {
-  for(let i = 0; i < 4; i++) {
+  function startSlides() {
+    for(let i = 0; i < 4; i++) {
+      slide = step;
+      draw();
+      step++;
+      offsetGlobal++;
+    }
+  }
+
+  function slideRight() {
+    let offsetLocal = 0;
+    let slidesActive = document.querySelectorAll('.film'); //Берем все активные слайды
+    for(let i = 0; i < slidesActive.length; i++) {
+      slidesActive[i].style.left = offsetLocal * widthSlide + widthSlide + 'px';
+      offsetLocal++;
+    }
+    slidesActive[3].remove(); // Удаляем лишний слайд из DOM
+    slidesActive = document.querySelectorAll('.film'); //Берем все активные слайды
+    for  (let i = 0; i < slidesActive.length; i++) { //Удаляем слайды с экрана
+      slidesActive[i].remove();
+    }
+    offsetGlobal = 0;
+    rightDraw(); // Записываем слайд в начало
+    for(let i = 0; i < slidesActive.length; i++) { // Записываем слайды далее
+      document.querySelector('#films').appendChild(slidesActive[i]);
+    }
+  }
+
+  function rightDraw() {
+    if (step < 5) {
+      slide = step + 5 + slides.length - 10; //
+    } else {
+      slide = step - 5;
+    }
+    draw();
+    step--;
+    if (step == -1) {
+      step = numberLastSlide;
+    }
+  }
+
+  function slideLeft() {
+    let offsetLocal = 0;
+    let slidesActive = document.querySelectorAll('.film'); //Берем все активные слайды
+    for(let i = 0; i < slidesActive.length; i++) {
+      slidesActive[i].style.left = offsetLocal * widthSlide - widthSlide + 'px';
+      offsetLocal++;
+    }
+    slidesActive[0].remove();
+    offsetGlobal = 3;
+    leftDraw();
+  }
+
+  function leftDraw(){
     slide = step;
     draw();
     step++;
-    offsetGlobal++;
+    if (step == slides.length) {
+      step = 0;
+    }
   }
-}
 
-function slideRight() {
-  let offsetLocal = 0;
-  let slidesActive = document.querySelectorAll('.film'); //Берем все активные слайды
-  for(let i = 0; i < slidesActive.length; i++) {
-    slidesActive[i].style.left = offsetLocal * 305 + 305 + 'px';
-    offsetLocal++;
+  function draw() {
+    slides[slide].style.left = offsetGlobal * widthSlide + 'px';
+    document.querySelector('#films').appendChild(slides[slide]);
+    console.log('Нарисована ' + slide + ' картинка!');
   }
-  slidesActive[3].remove(); // Удаляем лишний слайд из DOM
-  slidesActive = document.querySelectorAll('.film'); //Берем все активные слайды
-  for  (let i = 0; i < slidesActive.length; i++) { //Удаляем слайды с экрана
-    slidesActive[i].remove();
-  }
-  offsetGlobal = 0;
-  rightDraw(); // Записываем слайд в начало
-  for(let i = 0; i < slidesActive.length; i++) { // Записываем слайды далее
-    document.querySelector('#films').appendChild(slidesActive[i]);
-  }
-}
-
-function rightDraw() {
-  if (step == 0) {slide = 5}
-  if (step == 1) {slide = 6}
-  if (step == 2) {slide = 7}
-  if (step == 3) {slide = 8}
-  if (step == 4) {slide = 9}
-  if (step == 5) {slide = 0}
-  if (step == 6) {slide = 1}
-  if (step == 7) {slide = 2}
-  if (step == 8) {slide = 3}
-  if (step == 9) {slide = 4}
-  draw();
-  step--;
-  if (step == -1) {
-    step = 9;
-  }
-}
-
-function slideLeft() {
-  let offsetLocal = 0;
-  let slidesActive = document.querySelectorAll('.film'); //Берем все активные слайды
-  for(let i = 0; i < slidesActive.length; i++) {
-    slidesActive[i].style.left = offsetLocal * 305 - 305 + 'px';
-    offsetLocal++;
-  }
-  slidesActive[0].remove();
-  offsetGlobal = 3;
-  leftDraw();
-}
-
-function leftDraw(){
-  slide = step;
-  draw();
-  step++;
-  if (step == 10) {
-    step = 0;
-  }
-}
-
-function draw() {
-  slides[slide].style.left = offsetGlobal * 305 + 'px';
-  document.querySelector('#films').appendChild(slides[slide]);
 }
