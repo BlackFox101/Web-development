@@ -3,15 +3,15 @@
   $email = $_POST['email'];
   if (preg_match("/^[a-zA-Z]+$/",$first_name))
   {
-    $correct_name = 'true';
+    $correct_name = true;
   }
   elseif (preg_match("/^[А-Яа-яЁё]+$/",$first_name))
   {
-    $correct_name = 'true';
+    $correct_name = true;
   }
   else
   {
-    $correct_name = 'false';
+    $correct_name = false;
   }
 
   $direction = '../';
@@ -22,24 +22,24 @@
   {
     if (!file_exists($direction))
     {
-      $correct_email = 'true';
+      $correct_email = true;
     }
     else
     {
-      $correct_email = 'registered';
+      $correct_email = 'reg';
     }
   }
   else
   {
-    $correct_email = 'false';
+    $correct_email = false;
   }
 
-  $my_array = ["email" => "$correct_email",
+  $array_out = ["email" => "$correct_email",
                "first_name" => "$correct_name"];
-  $json_str = json_encode($my_array);
-  echo $json_str;
+  $json_out = json_encode($array_out);
+  echo $json_out;
 
-  if ($correct_email == 'true' && $correct_name == 'true')
+  if ($correct_email == true && $correct_name == true)
   {
     form_entry($direction, $email);
   }

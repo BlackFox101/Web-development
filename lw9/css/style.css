@@ -712,3 +712,18 @@ h5
     color: white;
     font-family: "Open Sans";
 }
+
+.hidden
+{
+    visibility: hidden;
+}
+
+.error_red
+{
+    border-color: red;
+}
+
+.gray
+{
+    border-color: #a6a6a6;
+}
