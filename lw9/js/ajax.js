@@ -15,17 +15,16 @@ function run() {
     const formData = new FormData(form);
     ok.classList.add("hidden"); //Скрываем блок ОК
 
-    let out;
     fetch('php/work_form.php', {
       method: 'POST',
       body: formData
     }).then(response => response.text())
       .then(data => {
-        out = JSON.parse(data);
-        answer();
+        let out = JSON.parse(data);
+        answer(out);
       }).catch(() => console.log('ошибка'));
 
-    function answer() {
+    function answer(out) {
       let email = (out.email);
       let first_name = (out.first_name);
       if (first_name == '') { //Неправильное имя

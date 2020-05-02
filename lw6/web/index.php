@@ -5,7 +5,6 @@
     <title>Профиль</title>
     <link href="css/style.css" rel="stylesheet" >
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <script src="js/slider.js"></script>
   </head>
   <body>
     <div class="navigation">
