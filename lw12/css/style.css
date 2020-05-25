@@ -62,6 +62,7 @@ ul.header_lists a
 p.quote_text
 {
     color: #ffffff;
+    font-family: "Georgia";
     font-style: italic;
 }
 
@@ -526,7 +527,7 @@ span.span_link
     {
         margin-bottom: 30px;
         background: url(../images/arrow_down.png) no-repeat;
-        background-position: 407px 20px;
+        background-position: 97% 20px;
     }
 
     .radio
@@ -665,7 +666,6 @@ span.span_link
     img.porter
     {
         width: 190px;
-        position: absolute;
     }
 
     .quote
@@ -1004,7 +1004,7 @@ span.span_link
     {
         margin-bottom: 30px;
         background: url(../images/arrow_down.png) no-repeat;
-        background-position: 407px 20px;
+        background-position: 97% 20px;
     }
 
     .radio
@@ -1055,18 +1055,6 @@ span.span_link
     ul.header_lists
     {
         padding-left: 0;
-    }
-
-    ul.header_lists:after
-    {
-        content: '';
-        display: block;
-        clear: both;
-    }
-
-    .header_lists li
-    {
-        float: left;
     }
 
     ul.header_lists a
@@ -1138,16 +1126,12 @@ span.span_link
     img.porter
     {
         width: 180px;
-        position: absolute;
     }
 
     .quote
     {
         margin-left: 180px;
-        height: 190px;
         padding-left: 40px;
-        padding-top: 25px;
-        position: absolute;
     }
 
     p.quote_text
@@ -1160,15 +1144,10 @@ span.span_link
     {
         font-size: 10px;
         line-height: 20px;
-        color: #f5f5f5;
-        font-family: "Open Sans";
-        font-weight: 600;
     }
 
     .content_bottom
     {
-        width: 100%;
-        position: relative;
         height: 500px;
         margin-top: 0;
     }
@@ -1178,43 +1157,28 @@ span.span_link
         width: 270px;
         top: 100px;
         height: 400px;
-        position: absolute;
     }
 
     h3.list_title
     {
         font-size: 16px;
-        line-height: 26px;
-        color: #15a98c;
-        font-family: "Open Sans";
-        font-weight: 600;
-        letter-spacing: 1px;
     }
 
     .writers_list
     {
-        padding-top: 12px;
         font-size: 12px;
         line-height: 26px;
     }
 
     .films_list
     {
-        padding-top: 11px;
         height: 260px;
         font-size: 12px;
         line-height: 26px;
-        margin-left: 20px;
-    }
-
-    .list
-    {
-        position: absolute;
     }
 
     .list_bottom
     {
-        position: absolute;
         top: 160px;
         left: 0;
     }
@@ -1222,7 +1186,6 @@ span.span_link
     .info
     {
         left: 220px;
-        position: absolute;
     }
 
     .me
@@ -1233,8 +1196,6 @@ span.span_link
     h1
     {
         margin-left: 4px;
-        font-size: 40px;
-        line-height: 40px;
     }
 
     p.text_me
@@ -1248,40 +1209,24 @@ span.span_link
     {
         margin: 27px 0 0 0;
         width: 55px;
-        height: 6px;
     }
 
-    h2
-    {
-        font-size: 26px;
-        line-height: 42px;
-        color: #333333;
-        font-family: "Open Sans";
-        font-weight: 400;
-    }
 
     p.text_hobby
     {
         margin-top: 15px;
         font-size: 13px;
-        line-height: 24px;
-        color: #555555;
-        font-family: "Georgia";
     }
 
     p.communication
     {
-        font-size: 15px;
-        line-height: 32px;
         top: 440px;
     }
 
     .description_film
     {
-        padding-top: 20px;
         width: 630px;
         height: 1270px;
-        margin: 0 auto 40px auto;
     }
 
     span.info_film
@@ -1295,7 +1240,6 @@ span.span_link
 
     .films
     {
-        margin-top: 18px;
         position: relative;
     }
 
@@ -1336,18 +1280,12 @@ span.span_link
     {
         margin-top: 20px;
         font-size: 18px;
-        line-height: 32px;
-        color: #333333;
-        font-family: "Open Sans";
-        font-weight: 900;
     }
 
     p.description
     {
         margin-top: 19px;
         font-size: 13px;
-        line-height: 20px;
-        color: #555555;
     }
 
     .link_films
@@ -1364,41 +1302,23 @@ span.span_link
     .form
     {
         width: 700px;
-        padding: 0 20px;
-        margin: 0 auto 50px auto;
-    }
-
-    .header
-    {
-        position: relative;
     }
 
     h4
     {
         font-size: 32px;
-        line-height: 42px;
-        color: #333333;
-        font-family: "Open Sans";
-        font-weight: 300;
-        text-align: center;
     }
 
     .line_left
     {
-        position: absolute;
         width: 130px;
-        height: 1px;
-        background-color: #C4C4C4;
         top: 20px;
         left: 50px;
     }
 
     .line_right
     {
-        position: absolute;
         width: 130px;
-        height: 1px;
-        background-color: #C4C4C4;
         top: 20px;
         right: 50px;
     }
@@ -1413,28 +1333,18 @@ span.span_link
     {
         font-size: 16px;
         line-height: 29px;
-        color: #333333;
-        font-family: "Open Sans";
-        font-weight: 400;
     }
 
     .input_data
     {
-        width: 100%;
         border-radius: 3px;
         border: 2px solid #c9c9c9;
         height: 40px;
         font-size: 16px;
-        line-height: 26px;
-        color: #333333;
-        font-family: "Open Sans";
-        font-weight: 400;
-        padding: 0 14px;
     }
 
     form > div
     {
-        padding-top: 4px;
         margin-bottom: 23px;
     }
 
@@ -1445,19 +1355,6 @@ span.span_link
         color: #333333;
         font-family: "Open Sans";
         font-weight: 400;
-    }
-
-    .country select:hover, input:hover, textarea:hover
-    {
-        border-color: #a6a6a6;
-    }
-
-    .country select:focus, input:focus, textarea:focus
-    {
-        box-shadow: none;
-        border-color: #15a98c;
-        outline: 0;
-        outline-offset: 0;
     }
 
     input#men
@@ -1473,38 +1370,19 @@ span.span_link
 
     textarea
     {
-        width: 100%;
-        border-radius: 3px;
-        border: 2px solid #c9c9c9;
-        height: 130px;
         font-size: 16px;
         line-height: 32px;
-        color: #333333;
-        font-family: "Open Sans";
-        font-weight: 400;
-        padding: 0 14px;
     }
 
     .country select
     {
-        width: 100%;
-        border-radius: 3px;
-        border: 2px solid #c9c9c9;
         height: 40px;
         font-size: 16px;
         line-height: 32px;
-        color: #555555;
-        font-family: "Open Sans";
-        font-weight: 400;
-        padding-left: 13px;
-        background: transparent;
-        -webkit-appearance: none;
     }
 
     .country
     {
-        margin-bottom: 30px;
-        background: url(../images/arrow_down.png) no-repeat;
         background-position: 425px 20px;
     }
 
@@ -1518,25 +1396,12 @@ span.span_link
         margin-top: 30px;
         width: 160px;
         height: 40px;
-        border-radius: 5px;
-        border-style: none;
-        display: block;
-        font-size: 15px;
-        line-height: 32px;
-        color: #f5f5f5;
-        font-family: "Georgia";
-        background-color: #15a98c;
     }
 
     footer
     {
         height: 50px;
-        font-size: 13px;
         line-height: 50px;
-        color: #555555;
-        font-family: "Georgia";
-        text-align: center;
-        background: #f5f5f5;
     }
 
 }
@@ -1582,10 +1447,7 @@ span.span_link
     .quote
     {
         margin-left: 250px;
-        height: 190px;
         padding-left: 50px;
-        padding-top: 25px;
-        position: absolute;
     }
 
     p.quote_text
@@ -1598,67 +1460,39 @@ span.span_link
     {
         font-size: 11px;
         line-height: 42px;
-        color: #f5f5f5;
-        font-family: "Open Sans";
-        font-weight: 600;
     }
 
     .content_bottom
     {
-        width: 100%;
-        position: relative;
         height: 580px;
-    }
-
-    .lists
-    {
-        width: 270px;
-        top: 100px;
-        position: absolute;
-        height: 400px;
     }
 
     h3.list_title
     {
         font-size: 20px;
         line-height: 30px;
-        color: #15a98c;
-        font-family: "Open Sans";
-        font-weight: 600;
-        letter-spacing: 1px;
     }
 
     .writers_list
     {
-        padding-top: 12px;
         font-size: 15px;
         line-height: 30px;
     }
 
     .films_list
     {
-        padding-top: 11px;
-        height: 260px;
         font-size: 15px;
         line-height: 30px;
-        margin-left: 20px;
-    }
-
-    .list
-    {
-        position: absolute;
     }
 
     .list_bottom
     {
-        position: absolute;
         top: 180px;
     }
 
     .info
     {
         left: 300px;
-        position: absolute;
     }
 
     .me
@@ -1668,56 +1502,35 @@ span.span_link
 
     h1
     {
-        margin-left: 4px;
         font-size: 45px;
-        line-height: 40px;
     }
 
     p.text_me
     {
-        margin-top: 10px;
         font-size: 15px;
         line-height: 28px;
-    }
-
-    img.figure
-    {
-        margin-top: 27px;
-        width: 55px;
-        height: 6px;
     }
 
     h2
     {
         font-size: 30px;
-        line-height: 42px;
-        color: #333333;
-        font-family: "Open Sans";
-        font-weight: 400;
     }
 
     p.text_hobby
     {
-        margin-top: 15px;
         font-size: 15px;
         line-height: 28px;
-        color: #555555;
-        font-family: "Georgia";
     }
 
     p.communication
     {
-        font-size: 15px;
-        line-height: 32px;
         top: 500px;
     }
 
     .description_film
     {
-        padding-top: 20px;
         width: 880px;
         height: 830px;
-        margin: 0 auto 40px auto;
     }
 
     span.info_film
@@ -1729,12 +1542,6 @@ span.span_link
         font-weight: 400;
     }
 
-    .films
-    {
-        margin-top: 18px;
-        position: relative;
-    }
-
     .film_image
     {
         width: 205px;
@@ -1743,20 +1550,17 @@ span.span_link
     .film_one
     {
         width: 205px;
-        position: absolute;
     }
 
     .film_two
     {
         width: 205px;
-        position: absolute;
         left: 225px;
     }
 
     .film_three
     {
         width: 205px;
-        position: absolute;
         top: 0;
         left: 450px;
     }
@@ -1764,27 +1568,8 @@ span.span_link
     .film_four
     {
         width: 205px;
-        position: absolute;
         top: 0;
         left: 675px;
-    }
-
-    h2.name_film
-    {
-        margin-top: 20px;
-        font-size: 18px;
-        line-height: 32px;
-        color: #333333;
-        font-family: "Open Sans";
-        font-weight: 900;
-    }
-
-    p.description
-    {
-        margin-top: 19px;
-        font-size: 13px;
-        line-height: 20px;
-        color: #555555;
     }
 
     .link_films
@@ -1801,41 +1586,18 @@ span.span_link
     .form
     {
         width: 1000px;
-        padding: 0 20px;
-        margin: 0 auto 50px auto;
-    }
-
-    .header
-    {
-        position: relative;
-    }
-
-    h4
-    {
-        font-size: 32px;
-        line-height: 42px;
-        color: #333333;
-        font-family: "Open Sans";
-        font-weight: 300;
-        text-align: center;
     }
 
     .line_left
     {
-        position: absolute;
         width: 200px;
-        height: 1px;
-        background-color: #C4C4C4;
         top: 18px;
         left: 140px;
     }
 
     .line_right
     {
-        position: absolute;
         width: 200px;
-        height: 1px;
-        background-color: #C4C4C4;
         top: 18px;
         right: 140px;
     }
@@ -1844,35 +1606,6 @@ span.span_link
     {
         padding: 0 260px;
         padding-top: 30px;
-    }
-
-    form > label
-    {
-        font-size: 16px;
-        line-height: 29px;
-        color: #333333;
-        font-family: "Open Sans";
-        font-weight: 400;
-    }
-
-    .input_data
-    {
-        width: 100%;
-        border-radius: 3px;
-        border: 2px solid #c9c9c9;
-        height: 40px;
-        font-size: 16px;
-        line-height: 26px;
-        color: #333333;
-        font-family: "Open Sans";
-        font-weight: 400;
-        padding: 0 14px;
-    }
-
-    form > div
-    {
-        padding-top: 4px;
-        margin-bottom: 23px;
     }
 
     div > label
@@ -1908,40 +1641,8 @@ span.span_link
         margin-left: 35px;
     }
 
-    textarea
-    {
-        width: 100%;
-        border-radius: 3px;
-        border: 2px solid #c9c9c9;
-        height: 130px;
-        font-size: 16px;
-        line-height: 32px;
-        color: #333333;
-        font-family: "Open Sans";
-        font-weight: 400;
-        padding: 0 14px;
-    }
-
-    .country select
-    {
-        width: 100%;
-        border-radius: 3px;
-        border: 2px solid #c9c9c9;
-        height: 40px;
-        font-size: 16px;
-        line-height: 32px;
-        color: #555555;
-        font-family: "Open Sans";
-        font-weight: 400;
-        padding-left: 13px;
-        background: transparent;
-        -webkit-appearance: none;
-    }
-
     .country
     {
-        margin-bottom: 30px;
-        background: url(../images/arrow_down.png) no-repeat;
         background-position: 407px 20px;
     }
 
@@ -1950,30 +1651,9 @@ span.span_link
         margin-bottom: 25px;
     }
 
-    .submit
-    {
-        margin-top: 30px;
-        width: 160px;
-        height: 40px;
-        border-radius: 5px;
-        border-style: none;
-        display: block;
-        font-size: 15px;
-        line-height: 32px;
-        color: #f5f5f5;
-        font-family: "Georgia";
-        background-color: #15a98c;
-    }
-
     footer
     {
-        height: 50px;
         font-size: 16px;
-        line-height: 50px;
-        color: #555555;
-        font-family: "Georgia";
-        text-align: center;
-        background: #f5f5f5;
     }
 }
 
@@ -2020,44 +1700,26 @@ span.span_link
 
     }
 
-    .img_qoutes
-    {
-        height: 190px;
-    }
-
     img.porter
     {
-        border-radius: 5px;
-        background-color: #132d36;
         width: 330px;
-        position: absolute;
     }
 
     .quote
     {
         margin-left: 330px;
-        height: 190px;
         padding-left: 63px;
-        padding-top: 25px;
-        position: absolute;
     }
 
     p.quote_text
     {
         font-size: 28px;
         line-height: 42px;
-        color: #ffffff;
-        font-family: "Georgia";
-        font-style: italic;
     }
 
     p.quote_author
     {
         font-size: 16px;
-        line-height: 42px;
-        color: #f5f5f5;
-        font-family: "Open Sans";
-        font-weight: 600;
     }
 
     .content_bottom
@@ -2067,7 +1729,6 @@ span.span_link
         margin-right: 100px;
         padding-left: 20px;
         padding-right: 20px;
-        position: relative;
         height: 700px;
     }
 
@@ -2075,52 +1736,36 @@ span.span_link
     {
         top: 156px;
         height: 450px;
-        position: absolute;
     }
 
     h3.list_title
     {
         font-size: 24px;
         line-height: 32px;
-        color: #15a98c;
-        font-family: "Open Sans";
-        font-weight: 600;
-        letter-spacing: 1px;
     }
 
     .writers_list
     {
         width: 330px;
-        padding-top: 12px;
         font-size: 19px;
         line-height: 36px;
-        color: #555555;
-        font-family: "Georgia";
-        margin-left: 20px;
     }
 
     .films_list
     {
-        padding-top: 11px;
         width: 330px;
-        height: 260px;
         font-size: 19px;
         line-height: 36px;
-        color: #555555;
-        font-family: "Georgia";
-        margin-left: 20px;
     }
 
     .list_bottom
     {
-        position: absolute;
         top: 225px;
     }
 
     .info
     {
         left: 410px;
-        position: absolute;
     }
 
     .me
@@ -2130,11 +1775,7 @@ span.span_link
 
     h1
     {
-        margin-left: 4px;
         font-size: 51px;
-        line-height: 40px;
-        color: #333333;
-        font-family: "Open Sans";
     }
 
     p.text_me
@@ -2147,7 +1788,6 @@ span.span_link
 
     img.figure
     {
-        margin-top: 27px;
         width: 63px;
         height: 7px;
     }
@@ -2155,10 +1795,6 @@ span.span_link
     h2
     {
         font-size: 36px;
-        line-height: 42px;
-        color: #333333;
-        font-family: "Open Sans";
-        font-weight: 400;
     }
 
     .hobby
@@ -2168,22 +1804,15 @@ span.span_link
 
     p.text_hobby
     {
-        margin-top: 15px;
         width: 562px;
         font-size: 19px;
         line-height: 32px;
-        color: #555555;
-        font-family: "Georgia";
     }
 
     p.communication
     {
         font-size: 19px;
-        line-height: 32px;
-        color: #15a98b;
-        font-family: "Georgia";
         top: 600px;
-        position: absolute;
     }
 
     .description_film
@@ -2191,7 +1820,6 @@ span.span_link
         padding-top: 40px;
         height: 1045px;
         width: 1200px;
-        margin: 0 auto 40px auto;
     }
 
     span.info_film
@@ -2211,53 +1839,40 @@ span.span_link
     .films
     {
         margin-top: 32px;
-        position: relative;
     }
 
     .film_one
     {
         width: 285px;
-        position: absolute;
     }
 
     .film_two
     {
         width: 285px;
-        position: absolute;
         left: 305px;
     }
 
     .film_three
     {
         width: 285px;
-        position: absolute;
         left: 610px;
     }
 
     .film_four
     {
         width: 285px;
-        position: absolute;
         left: 915px;
     }
 
     h2.name_film
     {
-        margin-top: 20px;
         font-size: 22px;
-        line-height: 32px;
-        color: #333333;
-        font-family: "Open Sans";
-        font-weight: 900;
     }
 
     p.description
     {
-        margin-top: 19px;
         font-size: 16px;
         line-height: 28px;
-        color: #555555;
-        font-family: "Georgia";
     }
 
     .link_films
@@ -2277,51 +1892,25 @@ span.span_link
         height: 70px;
         font-size: 20px;
         line-height: 70px;
-        color: #555555;
-        font-family: "Georgia";
-        text-align: center;
-        background: #f5f5f5;
     }
 
     .form
     {
-        width: 1000px;
-        padding: 0 20px;
         margin: 0 auto 70px auto;
-    }
-
-    .header
-    {
-        position: relative;
     }
 
     h4
     {
         font-size: 36px;
-        line-height: 42px;
-        color: #333333;
-        font-family: "Open Sans";
-        font-weight: 300;
-        text-align: center;
     }
 
     .line_left
     {
-        position: absolute;
-        width: 200px;
-        height: 1px;
-        background-color: #C4C4C4;
-        top: 18px;
         left: 124px;
     }
 
     .line_right
     {
-        position: absolute;
-        width: 200px;
-        height: 1px;
-        background-color: #C4C4C4;
-        top: 18px;
         left: 622px;
     }
 
@@ -2335,29 +1924,14 @@ span.span_link
     {
         font-size: 20px;
         line-height: 32px;
-        color: #333333;
-        font-family: "Open Sans";
-        font-weight: 400;
     }
 
     .input_data
     {
-        width: 100%;
-        border-radius: 3px;
-        border: 2px solid #c9c9c9;
         height: 50px;
         font-size: 20px;
         line-height: 32px;
-        color: #333333;
-        font-family: "Open Sans";
-        font-weight: 400;
         padding: 0 18px;
-    }
-
-    form > div
-    {
-        padding-top: 4px;
-        margin-bottom: 23px;
     }
 
     div > label
@@ -2395,38 +1969,20 @@ span.span_link
 
     textarea
     {
-        width: 100%;
-        border-radius: 3px;
-        border: 2px solid #c9c9c9;
         height: 150px;
         font-size: 20px;
-        line-height: 32px;
-        color: #333333;
-        font-family: "Open Sans";
-        font-weight: 400;
         padding: 0 18px;
     }
 
     .country select
     {
-        width: 100%;
-        border-radius: 3px;
-        border: 2px solid #c9c9c9;
         height: 50px;
         font-size: 18px;
-        line-height: 32px;
-        color: #555555;
-        font-family: "Open Sans";
-        font-weight: 400;
-        padding-left: 13px;
-        background: transparent;
-        -webkit-appearance: none;
     }
 
     .country
     {
         margin-bottom: 42px;
-        background: url(../images/arrow_down.png) no-repeat;
         background-position: 500px 23px;
     }
 
@@ -2445,13 +2001,7 @@ span.span_link
         margin-top: 47px;
         width: 220px;
         height: 50px;
-        border-radius: 5px;
-        border-style: none;
-        display: block;
         font-size: 19px;
         line-height: 32px;
-        color: #f5f5f5;
-        font-family: "Georgia";
-        background-color: #15a98c;
     }
 }
