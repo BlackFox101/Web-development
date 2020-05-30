@@ -139,8 +139,8 @@
         <label>Ваш пол <span class="red">*</span></label>
         <!-- class="radio"-->
         <div class="radio">
-          <input type="radio" name="gender" value="men" id="men" required checked /><label class="gender" for="men">Мужской</label>
-          <input type="radio" name="gender" value="woman" id="woman" required /><label class="gender" for="woman">Женский</label>
+          <input type="radio" name="gender" value="Мужской" id="men" required checked /><label class="gender" for="">Мужской</label>
+          <input type="radio" name="gender" value="Женский" id="woman" required /><label class="gender" for="woman">Женский</label>
         </div>
         <label>Ваше сообщение <span class="red">*</span></label>
         <?php if (isset($args['sms_error_msg'])): ?>

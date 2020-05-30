@@ -2,7 +2,7 @@
 
   include "../src/common.inc.php";
 
-  if (getRequestMethod() == 'POST')
+  if (getRequestMethod() == "POST")
   {
     saveFeedbackPage();
   }
