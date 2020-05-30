@@ -2,5 +2,5 @@
 
   function mainPage(): void
   {
-    renderTemplate(‘main.tpl.php’);
+    renderTemplate('main.tpl.php');
   }
