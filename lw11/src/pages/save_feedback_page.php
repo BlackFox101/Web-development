@@ -23,13 +23,23 @@
     {
       $feedback['sms_error_msg'] = 'Напишите что-нибудь';
     }
+    $checkEmail = checkEmail($email);
 
-    if (!empty($first_name) &&  !empty($email) && !empty($message))
+    if ($checkEmail)
     {
-      $direction = 'data/' . $email . '.txt';
-      $fd = fopen($direction, 'w+');
-      fwrite($fd, $first_name."\r\n".$email."\r\n".$country."\r\n".$gender."\r\n".$message);
-      fclose($fd);
+      $feedback['email_error_msg'] = 'Такой Email уже зарегистирован';
+    }
+
+    if (!empty($first_name) &&  !empty($email) && !empty($message) && !$checkEmail)
+    {
+      $feedback = [
+        'name' => $first_name,
+        'email' => $email,
+        'country' => $country,
+        'gender' => $gender,
+        'message' => $message
+      ];
+      saveFeedback($feedback);
     }
 
     $feedback['email'] = $email;

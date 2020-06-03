@@ -1,0 +1,11 @@
+CREATE TABLE People
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(50) NOT NULL,
+    Email VARCHAR(50) NOT NULL,
+    Country VARCHAR(50) NOT NULL,
+    Gender VARCHAR(50) NOT NULL,
+    Message TEXT NOT NULL
+) DEFAULT CHARACTER SET utf8mb4
+  COLLATE 'utf8mb4_unicode_ci'
+  ENGINE = InnoDB;

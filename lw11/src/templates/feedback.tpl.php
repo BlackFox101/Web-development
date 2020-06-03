@@ -13,27 +13,29 @@
         <h4 class="form_header">Информация</h4>
         <span class="line_right"></span>
       </div>
-      <form action="feedbacks.php" method="POST" >
+      <form method="POST" >
         <label>Email: <span class="red">*</span></label>
-        <div>
           <input type="email" name="email" value="<?php echo $args['email'] ?? ''; ?>" class="input_data" title="Email" required />
-        </div>
+          <?php if (isset($args['Error'])): ?>
+            <p><?php echo $args['Error']; ?></p>
+          <?php endif; ?>
         <button type="submit" >Отправить</button>
         <?php if (isset($args['error'])): ?>
           <p class="error_message"><?php echo $args['error']; ?></p>
         <?php endif; ?>
       </form>
-      <?php if (isset($args['answers'])): ?>
-        <label>Имя</label>
-        <div class="output_data"><?php echo $args['first_name']; ?></div>
-        <label>Страна</label>
-        <div class="output_data"><?php echo $args['country']; ?></div>
-        <label>Пол</label>
-        <div class="output_data"><?php echo $args['gender']; ?></div>
-        <label>Сообщение</label>
-        <div class="output_data"><?php echo $args['message']; ?></div>
+      <?php if (isset($args['first_name'])): ?>
+        <div class="output">
+          <label>Имя</label>
+          <input class="input_data" value="<?php echo $args['first_name']; ?>" readonly>
+          <label>Страна</label>
+          <input class="input_data" value="<?php echo $args['country']; ?>" readonly>
+          <label>Пол</label>
+          <input class="input_data" value="<?php echo $args['gender']; ?>" readonly>
+          <label>Сообщение</label>
+          <textarea readonly><?php echo $args['message']; ?></textarea>
+        </div>
       <?php endif; ?>
     </div>
-    <footer>© 2006-2018 Поволжский государственный технологический университет, ФГБОУ ВО «ПГТУ»</footer>
   </body>
 </html>
