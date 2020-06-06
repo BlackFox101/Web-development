@@ -1,7 +1,19 @@
-#myCanvas
+svg
 {
     width: 1500px;
     height: 700px;
-    /*border: 1px solid black;*/
-    /*background: url(../setka.png) no-repeat;*/
+    border: 1px solid black;
+    background: url(../setka.png) no-repeat;
+}
+
+#el1
+{
+    transform-origin: 25% 25% 0;
+    transform: rotate(30deg);
+}
+
+#el2
+{
+    transform-origin: 25% 25% 0;
+    transform: rotate(-28deg);
 }
