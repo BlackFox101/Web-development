@@ -2,8 +2,8 @@ svg
 {
     width: 1500px;
     height: 700px;
-    border: 1px solid black;
-    background: url(../setka.png) no-repeat;
+    /*border: 1px solid black;
+    background: url(../setka.png) no-repeat;*/
 }
 
 #el1
