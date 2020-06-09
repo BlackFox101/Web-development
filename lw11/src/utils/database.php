@@ -6,6 +6,7 @@
     if ($connection === null)
     {
       $connection = new PDO(DB_DSN, DB_USER, DB_PASSWORD);
+      $connection->query('SET NAMES utf8');
     }
 
     return $connection;

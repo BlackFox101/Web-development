@@ -127,7 +127,7 @@ WHERE
     Faculty.Name = 'FIVT';
 
 SELECT
-    Students.Name AS "Name",
+    Students.Name AS "Имя",
     Faculty.Name AS "Faculty",
     Groups.Name AS "Group"
 FROM
