@@ -15,11 +15,11 @@
       </div>
       <form method="POST" >
         <label>Email: <span class="red">*</span></label>
+        <?php if (isset($args['Error'])): ?>
+          <p><?php echo $args['Error']; ?></p>
+        <?php endif; ?>
         <input type="email" name="email" value="<?php echo $args['email'] ?? ''; ?>" class="input_data" title="Email" required />
         <button type="submit" >Отправить</button>
-        <?php if (isset($args['error'])): ?>
-          <p class="error_message"><?php echo $args['error']; ?></p>
-        <?php endif; ?>
       </form>
       <?php if (isset($args['first_name'])): ?>
         <div class="output">

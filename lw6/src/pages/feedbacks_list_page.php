@@ -7,7 +7,7 @@
     $file = 'data/' . $email . '.txt';
     if (!file_exists($file))
     {
-      $answer['Error'] = 'Отправитель не найден';
+      $feedback['Error'] = 'Отправитель не найден';
       renderTemplate('feedback.tpl.php', $feedback);
       return;
     }
